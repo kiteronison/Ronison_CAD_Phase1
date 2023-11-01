@@ -34,7 +34,7 @@ Before you begin, make sure you have the following prerequisites in place:
    git clone https://github.com/yourusername/ai-image-recognition.git
    cd ai-image-recognition
 ### CODE
-
+ ```bash
 import requests
 endpoint = "YOUR_VISUAL_RECOGNITION_API_ENDPOINT"
 api_key = "YOUR_API_KEY"
