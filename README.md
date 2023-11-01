@@ -33,57 +33,16 @@ Before you begin, make sure you have the following prerequisites in place:
    ```bash
    git clone https://github.com/yourusername/ai-image-recognition.git
    cd ai-image-recognition
+### CODE
 
-### Code:
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Image to Caption</title>
-    <style>
-        /* Basic styling for demonstration purposes */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #imgPreview {
-            max-width: 100%;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-            <h1>upload image to generate caption</h1>
-        <input type="file" id="imageInput" accept="image/*">
-        <br><br>
-        <img id="imgPreview" src="#" alt="Uploaded Image">
-        <p id="generatedCaption"></p>
-    </div>
-
-    <script>
-        const imageInput = document.getElementById('imageInput');
-        const imgPreview = document.getElementById('imgPreview');
-        const generatedCaption = document.getElementById('generatedCaption');
-
-        imageInput.addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    imgPreview.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
-</body>
-</html>
+import requests
+endpoint = "YOUR_VISUAL_RECOGNITION_API_ENDPOINT"
+api_key = "YOUR_API_KEY"
+image_file = open("image.jpg", "rb")
+files = {"images_file": image_file}
+response = requests.post(
+    f"{endpoint}/v3/classify?version=2018-03-19",
+    files=files,
+    headers={"Authorization": f"Bearer {api_key}"} )
+results = response.json()
+print(results)
