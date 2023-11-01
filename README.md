@@ -81,15 +81,6 @@ Before you begin, make sure you have the following prerequisites in place:
                     imgPreview.src = e.target.result;
                 };
                 reader.readAsDataURL(file);
-
-                // Here, you'd integrate with backend to send the file for caption generation
-                // Example: You'd send the file to your server and use IBM Cloud Visual Recognition or similar services to generate a caption.
-                // The generated caption would then be received and displayed on the webpage.
-                // This process involves backend code and API integration.
-                // Below is a sample representation (which requires backend functionality).
-                // Replace the below line with your actual backend logic to handle image upload and caption generation.
-                // Simulating generated caption for demonstration purposes.
-                generatedCaption.textContent = "A generated caption for the uploaded image.";
             }
         });
     </script>
