@@ -35,6 +35,7 @@ Before you begin, make sure you have the following prerequisites in place:
    cd ai-image-recognition
 
 ### Code:
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +62,7 @@ Before you begin, make sure you have the following prerequisites in place:
 </head>
 <body>
     <div class="container">
-        <h1>Upload Image to Generate Caption</h1>
+            <h1>upload image to generate caption</h1>
         <input type="file" id="imageInput" accept="image/*">
         <br><br>
         <img id="imgPreview" src="#" alt="Uploaded Image">
