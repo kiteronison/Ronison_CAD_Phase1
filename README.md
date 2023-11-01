@@ -33,6 +33,13 @@ Before you begin, make sure you have the following prerequisites in place:
    ```bash
    git clone https://github.com/yourusername/ai-image-recognition.git
    cd ai-image-recognition
+
+### Preview
+[23d9f5ce07d259c1f6c517b2e820fc08](https://github.com/kiteronison/Ronison_Image_Recognition/assets/94346280/dde62b3b-dbff-4b0e-8d8f-8e70056aae38)
+
+An adorable kitten enjoying the sunshine.
+
+
 ### CODE
  ```bash
 import requests
@@ -49,7 +56,8 @@ print(results)
 
 # html
 
- ```bash
+ ```bash!
+
 <!DOCTYPE html>
 <html>
 <head>
